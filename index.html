@@ -368,9 +368,132 @@
         <p>Der Preis für unsere exklusive Wasserbank liegt bei ca. 1000 Euro. Für eine individuelle Beratung oder weitere Informationen können Sie uns jederzeit unter <a href="mailto:nils.schulz@gym-sarstedt.de">hilfe@bank-rott.de</a> kontaktieren.</p>
     </section>
 
+    <!-- Timeline Section -->
+<section id="timeline" class="timeline container">
+    <h2>Unsere Meilensteine</h2>
+    <div class="timeline-container">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+            <div class="timeline-date">10.10.24</div>
+            <div class="timeline-content">
+                <h3>Gründung der Bank-Rott GmbH</h3>
+                <p>Am 10. Oktober 2024 wurde die Bank-Rott GmbH gegründet, mit dem Ziel, innovative und nachhaltige Möbelprodukte zu entwickeln.</p>
+            </div>
+        </div>
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+            <div class="timeline-date">17.10.24</div>
+            <div class="timeline-content">
+                <h3>Entwicklung der Idee zur Wasserbank</h3>
+                <p>Am 17. Oktober 2024 entstand die Idee für die revolutionäre Wasserbank – eine Bank aus Glas und Wasser, die Design mit Nachhaltigkeit vereint.</p>
+            </div>
+        </div>
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+            <div class="timeline-date">16.11.24</div>
+            <div class="timeline-content">
+                <h3>Website Launch</h3>
+                <p>Am 16. November 2024 ging die Website von Bank-Rott online, um die innovative Wasserbank einem breiten Publikum vorzustellen.</p>
+            </div>
+        </div>
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item">
+            <div class="timeline-date">01.01.2030</div>
+            <div class="timeline-content">
+                <h3>Verkaufsstart der Wasserbank</h3>
+                <p>Die Wasserbank wird voraussichtlich ab dem 1. Januar 2030 zum Verkauf angeboten. Bis dahin arbeiten wir daran, die Produktionskapazitäten auszubauen und den Markt vorzubereiten.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timeline CSS -->
+<style>
+    /* Styling für den Zeitstrahl */
+    #timeline {
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    #timeline h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #0077b6;
+    }
+
+    .timeline-container {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .timeline-item {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .timeline-date {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #0077b6;
+        margin-right: 20px;
+        text-align: center;
+        width: 100px;
+        position: relative;
+    }
+
+    .timeline-date::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 2px;
+        width: 40px;
+        background-color: #0077b6;
+        transform: translateY(50%);
+    }
+
+    .timeline-content {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .timeline-content p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* Styling für die vertikale Linie */
+    .timeline-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background-color: #0077b6;
+        transform: translateX(-50%);
+    }
+</style>
+
+
     <!-- Footer -->
     <footer>
-        <p>© 2024 Bank-Rott Gmbh. | <a href="mailto:nils.schulz@gym-sarstedt.de">hilfe@bank-rott.de</a></p>
+        <p>© 2024 Bank-Rott Gmbh. | <a href="mailto:nils.schulz@gym-sarstedt.de">hilfe@bank-rott.de</a> | Website designed and developed by Nils Schulz.</p>
     </footer>
 
     <!-- JavaScript -->
