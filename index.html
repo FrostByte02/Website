@@ -175,18 +175,73 @@
             color: #555;
         }
         
+            /* About Us Section Styling */
+    .about-us {
+        padding: 60px 20px;
+        background-color: #f8f9fa;
+        text-align: center;
+        margin-top: 40px;
+        border-top: 2px solid #0077b6;
+    }
+
+    .about-us h2 {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: #0077b6;
+    }
+
+    .about-us h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 30px;
+        color: #333;
+    }
+
+    .about-us p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.8;
+        margin-top: 10px;
+    }
+
+    /* Ensure the section content aligns with the rest of the website */
+    .about-us .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Add some responsive adjustments */
+    @media (max-width: 768px) {
+        .about-us h2 {
+            font-size: 1.8rem;
+        }
+
+        .about-us h3 {
+            font-size: 1.2rem;
+        }
+
+        .about-us p {
+            font-size: 1rem;
+        }
+    }
+
 
     </style>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <h1><strong>Bank-Rott Gmbh.</strong></h1>
-            <p>Setz dich ans Meer, ohne nass zu werden!</p>
-        </div>
-    </header>
+<header>
+    <div class="container">
+        <!-- Logo -->
+        <img src="Images/Logo.png" alt="Bank-Rott Logo" style="max-width: 150px; height: auto; margin-bottom: 20px;">
+        <h1><strong>Bank-Rott Gmbh.</strong></h1>
+        <p>Bänke nasser Art.</p>
+    </div>
+</header>
+
 
     <!-- Hero Section -->
     <div class="hero">
@@ -293,6 +348,24 @@
             <img src="Images/Julian.heic" alt="Team Member 3">
             <p><strong>Product Design:</strong> Julian Mahler</p>
         </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us container">
+         <h2>Über uns</h2>
+        <p>Wir sind Bank-Rott GmbH, ein Unternehmen mit Sitz in Kiel, das sich auf innovative, umweltfreundliche Möbelprodukte spezialisiert hat. Unsere Wasserbank ist mehr als nur ein Möbelstück; sie ist ein Statement für Transparenz und Nachhaltigkeit. Hergestellt aus recyceltem Glas und nachhaltigen Materialien, bietet sie eine einzigartige Kombination aus Ästhetik und Funktionalität.</p>
+            
+        <h3>Unsere Zielgruppen</h3>
+        <p>Unsere Kunden sind vor allem wohlhabende Unternehmer und Hausbesitzer, die Wert auf Design und Nachhaltigkeit legen. Zudem arbeiten wir mit staatlichen Institutionen zusammen, um öffentliche Plätze mit unserer Wasserbank zu bereichern.</p>
+    
+        <h3>Unsere Vision</h3>
+        <p>Unser Ziel ist es, sowohl umweltfreundlich als auch erfolgreich zu sein, indem wir innovative Lösungen anbieten, die den Bedürfnissen unserer Kunden entsprechen. Wir streben auch danach, ein gutes Arbeitsklima zu schaffen, das unsere Mitarbeiter inspiriert und motiviert, ihr Bestes zu geben.</p>
+    
+        <h3>Unser Lieferservice</h3>
+        <p>Wir bieten einen hauseigenen Lieferservice innerhalb Deutschlands, um sicherzustellen, dass Ihre Wasserbank schnell und sicher bei Ihnen ankommt. Ob für private oder öffentliche Nutzung – wir kümmern uns um den Transport bis zu Ihrer Wunschadresse.</p>
+    
+        <h3>Preisinformationen</h3>
+        <p>Der Preis für unsere exklusive Wasserbank liegt bei ca. 1000 Euro. Für eine individuelle Beratung oder weitere Informationen können Sie uns jederzeit unter <a href="mailto:nils.schulz@gym-sarstedt.de">hilfe@bank-rott.de</a> kontaktieren.</p>
     </section>
 
     <!-- Footer -->
