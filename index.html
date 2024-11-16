@@ -104,12 +104,13 @@
 
         .features .feature {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            flex-direction: column; /* Elemente untereinander anordnen */
+            align-items: center; /* Zentriert die Elemente */
+            justify-content: center;
             margin-bottom: 40px;
             gap: 20px;
         }
+
 
         .features img {
             max-width: 40%;
@@ -162,6 +163,19 @@
         footer a {
             color: #0077b6;
         }
+
+        .testimonials {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #e6f7ff;
+        }
+        .testimonials .testimonial {
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #555;
+        }
+        
+
     </style>
 </head>
 
@@ -176,7 +190,7 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <img src="Images/Aqua-Bank.png" alt="Wasserbank">
+        <img src="Images/Park.png" alt="Wasserbank">
         <p>Unsere revolutionäre Wasserbank kombiniert Komfort und Transparenz.</p>
         <a href="#features" class="btn">Mehr erfahren</a>
     </div>
@@ -198,6 +212,72 @@
         </div>
     </section>
 
+    <!-- Image Slider Section -->
+    <section id="image-slider" style="width: 90%; max-width: 1200px; margin: 40px auto; text-align: center;">
+        <h2 style="font-size: 2rem; font-weight: 300; margin-bottom: 20px;">Galerie</h2>
+        <div class="slider" style="position: relative;">
+            <img id="slider-image" src="Images/Home.png" alt="Slider Image" 
+                style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <div style="text-align: center; margin-top: 20px; position: relative;">
+                <!-- Previous Button -->
+                <button id="prev" onclick="prevImage()" 
+                        style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); 
+                            background-color: #0077b6; color: white; padding: 10px 20px; 
+                            font-size: 1rem; font-weight: bold; border: none; border-radius: 50px; 
+                            cursor: pointer; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+                            transition: transform 0.3s ease, background-color 0.3s ease;">
+                    ← Zurück
+                </button>
+
+                <!-- Next Button -->
+                <button id="next" onclick="nextImage()" 
+                        style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); 
+                            background-color: #0077b6; color: white; padding: 10px 20px; 
+                            font-size: 1rem; font-weight: bold; border: none; border-radius: 50px; 
+                            cursor: pointer; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+                            transition: transform 0.3s ease, background-color 0.3s ease;">
+                    Weiter →
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Image Slider Script
+        const images = ["Images/Home.png", "Images/Park.png", "Images/House.png"];
+        let currentImageIndex = 0;
+
+        const sliderImage = document.getElementById("slider-image");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+
+        prevButton.addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+            sliderImage.src = images[currentImageIndex];
+        });
+
+        nextButton.addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+            sliderImage.src = images[currentImageIndex];
+        });
+    </script>
+
+    <!-- Customer Testemonies -->
+    <section id="testimonials" class="testimonials container">
+        <h2>Kundenstimmen</h2>
+        <div class="testimonial">
+            <p>„Die Wasserbank ist das Gesprächsthema in unserem Büro – ein echter Blickfang und nachhaltig dazu!“</p>
+            <strong>- Maria H., Interior Designerin</strong>
+        </div>
+        <div class="testimonial">
+            <p>„Perfekt für den Park – Menschen bleiben stehen und bewundern das innovative Design.“</p>
+            <strong>- Tom R., Stadtplaner</strong>
+        </div>
+    </section>
+    
+
     <!-- Team Section -->
     <section id="team" class="team container">
         <h2>Das Team hinter Bank-Rott</h2>
@@ -217,7 +297,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Bank-Rott | <a href="mailto:nils.schulz@gym-sarstedt.de">hilfe@bank-rott.de</a></p>
+        <p>© 2024 Bank-Rott Gmbh. | <a href="mailto:nils.schulz@gym-sarstedt.de">hilfe@bank-rott.de</a></p>
     </footer>
 
     <!-- JavaScript -->
